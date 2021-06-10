@@ -1,10 +1,10 @@
-const express = require('express')
-const recipesRouter = require('./recipes/recipes-router')
+const express = require('express');
+const recipesRouter = require('./recipes/recipes-router');
 
-const server = express()  
+const server = express();
 
-server.use(express.json())
+server.use(express.json());
 
-server.use('/api/recipes', recipesRouter)
+server.use('/api/recipes', recipesRouter);
 
-module.exports = server
+module.exports = server;
